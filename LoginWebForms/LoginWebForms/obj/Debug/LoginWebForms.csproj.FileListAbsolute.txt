@@ -69,3 +69,5 @@ D:\DW_Rodrigues_(HD)\3_REGES\3º_Semestre_2021\Desenvolvimento_WEB\2_Projetos\Au
 D:\DW_Rodrigues_(HD)\3_REGES\3º_Semestre_2021\Desenvolvimento_WEB\2_Projetos\Aula_09\LoginWebForms\LoginWebForms\LoginWebForms\obj\Debug\LoginWebForms.csproj.CopyComplete
 D:\DW_Rodrigues_(HD)\3_REGES\3º_Semestre_2021\Desenvolvimento_WEB\2_Projetos\Aula_09\LoginWebForms\LoginWebForms\LoginWebForms\obj\Debug\LoginWebForms.dll
 D:\DW_Rodrigues_(HD)\3_REGES\3º_Semestre_2021\Desenvolvimento_WEB\2_Projetos\Aula_09\LoginWebForms\LoginWebForms\LoginWebForms\obj\Debug\LoginWebForms.pdb
+D:\DW_Rodrigues_(HD)\3_REGES\3º_Semestre_2021\Desenvolvimento_WEB\2_Projetos\Aula_09\LoginWebForms\LoginWebForms\LoginWebForms\bin\BCrypt.Net.dll
+D:\DW_Rodrigues_(HD)\3_REGES\3º_Semestre_2021\Desenvolvimento_WEB\2_Projetos\Aula_09\LoginWebForms\LoginWebForms\LoginWebForms\bin\BCrypt.Net.xml
