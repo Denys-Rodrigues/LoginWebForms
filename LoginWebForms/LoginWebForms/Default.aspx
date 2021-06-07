@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Portal do Usuário</title>
     <%--Exemplo Professor--%>
-<%--    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <%--    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Style.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.6.0.min.js"></script>--%> <%--Código--%>
@@ -87,9 +87,9 @@
                         </div>
                         <div class="form-group">
                             <br />
-                            <asp:Label ID="lblResu" runat="server"></asp:Label>
-                            <asp:Button ID="btnEntrar" type="submit" Text="Entrar"
-                                class="btn float-right login_btn" runat="server" />
+                            <asp:Label ID="lblMsg" runat="server"></asp:Label>
+                            <asp:Button ID="btnAcessar" type="submit" Text="Acessar"
+                                class="btn float-right login_btn" runat="server" OnClick="btnAcessar_Click" />
                         </div>
                     </form>
                 </div>
