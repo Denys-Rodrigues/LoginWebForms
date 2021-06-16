@@ -24,9 +24,9 @@ namespace LoginWebForms
                 string usuario = txtUsuario.Text;
                 string senha = txtSenha.Text;
 
-                // Recuperar a senha do Usuário que está no Banco de Dados
+                //Recuperar senha do Usuário que está no BD
                 cmd.Connection = Conexao.Connection;
-                cmd.CommandText = @"select senha
+                cmd.CommandText = @"select senha 
                                     from usuario
                                     where login = @usuario";
 
@@ -42,25 +42,19 @@ namespace LoginWebForms
 
                 if (BCrypt.Net.BCrypt.Verify(senha, senhaEncriptada))
                 {
-                    // Banco de Dados processa dois Selects (Demorado)
-                    // Nivel
-                    //cmd.CommandText = @"select nivel
-                    //                    from usuario 
-                    //                    where login = @login";
+                    #region Outra maneira
+                    //cmd.CommandText = @"select nivel from usuario where login = @login";
                     //cmd.Parameters.AddWithValue("@login", usuario);
                     //string nivel = Convert.ToString(cmd.ExecuteScalar());
-                    
-                    // Nome
-                    //cmd.CommandText = @"select nome
-                    //                    from usuario 
-                    //                    where login = @login";
+
+                    //cmd.CommandText = @"select nome from usuario where login = @nome";
                     //cmd.Parameters.AddWithValue("@nome", usuario);
                     //string nome = Convert.ToString(cmd.ExecuteScalar());
+                    #endregion
 
-                    // Banco de Dados processa somente um Select (Rápido)
                     cmd.CommandText = @"select nome, nivel
-                                        from usuario 
-                                        where login = @login";
+                                        from usuario
+                                        where login=@login";
 
                     cmd.Parameters.AddWithValue("@login", usuario);
 
@@ -71,10 +65,10 @@ namespace LoginWebForms
                     string nome = dr.GetString("nome");
                     string nivel = dr.GetString("nivel");
 
-                    // Fazer Redirecionamento
-                    FormsAuthentication.RedirectFromLoginPage(nivel, false);
+                    //Fazer Redirecionamento
+                    FormsAuthentication.RedirectFromLoginPage(nome, false);
 
-                    // Dados da Sessão
+                    //Dados da Sessão
                     Session["Perfil"] = nivel;
                     Session["Nome"] = nome;
                 }

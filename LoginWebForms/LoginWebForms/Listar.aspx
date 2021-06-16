@@ -21,7 +21,7 @@
             </div>
         </div>
         <p>
-            <asp:Repeater ID="rptUsuarios" runat="server">
+            <asp:Repeater ID="rptUsuarios" runat="server" OnItemDataBound="rptUsuarios_ItemDataBound">
                 <HeaderTemplate>
                     <table class="table table-hover" id="sisDataTable">
                         <thead>
@@ -47,7 +47,7 @@
                         <td>
 
                             <asp:LinkButton ID="lnkDetalhes" runat="server">
-                                <a href='<%# Eval("id", "detalhes.aspx?id={0}") %>'>
+                                <a href='<%# Eval("id", "Detalhes.aspx?id={0}") %>'>
                                     <span class="fas fa-eye"></span>
                                 </a>
                             </asp:LinkButton>
@@ -87,5 +87,4 @@
             }
         });
     </script>
-
 </asp:Content>

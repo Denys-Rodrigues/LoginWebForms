@@ -61,8 +61,6 @@
                     <div class="d-flex justify-content-end social_icon">
                         <span><i class="fab fa-facebook-square"></i></span>
                         <span><i class="fab fa-instagram"></i></span>
-                        <%--<span><i class="fab fa-google-plus-square"></i></span>--%>
-                        <%--<span><i class="fab fa-twitter-square"></i></span>--%>
                     </div>
                 </div>
                 <div class="card-body">
@@ -93,14 +91,6 @@
                         </div>
                     </form>
                 </div>
-<%--                <div class="card-footer">
-                    <div class="d-flex justify-content-center links">
-                        Não tem uma conta?<a href="#">Cadastre-se</a>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
-                </div>--%>
             </div>
         </div>
     </div>
